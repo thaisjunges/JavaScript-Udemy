@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <form action="#" method="#">
+
+        <div id="container">
+            <div id="box">
+                 <div>
+            <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" oninput="this.value = this.value.replace(/[^a-z.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+    </div>
+    <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu email"/>    
+            <h1 id="tt"></h1> 
+            <h1 id="th"></h1>     
+            <h1 id="error"></h1>
+            <!--<button id="botao" onclick="login()">Login</button>--> 
+            <a id="menu" onclick="login()">Entrar</a>
+            
+        </div> 
+        </div>
+            </div>
+          
+            
+    
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

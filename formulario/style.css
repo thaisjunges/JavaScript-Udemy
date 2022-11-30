@@ -1,0 +1,29 @@
+#container{
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#box{
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.botao{
+        border-color: #3498db;
+        color: #fff;
+        box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+        -webkit-transition: all 150ms ease-in-out;
+        transition: all 150ms ease-in-out;
+      }
+      .botao:hover {
+        box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+      }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/notas.png" type="image/x-icon">
+    <title>Notas</title>
+</head>
+<body>
+    <div class="container">
+          <div class="imagem">
+          <img src="img/boletimescolar.png" alt="boletim escolar">  
+        </div>
+        <div>
+        <nav>
+        <a class="esquerda" href="menu.html">Menu</a>
+        <a class="direita" href="sair.html">Sair</a>
+    </nav>
+    </div>
+    </div>
+      
+    
+
+    <div class="menu">
+        <div class="box">
+        <h1>Digite sua primeira nota: <input type="text" id="numero1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /> </h1>
+        <h1>Digite sua segunda nota: <input type="number" id="numero2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></h1>
+        <h1>Digite sua terceira nota: <input type="number" id="numero3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></h1>
+        <h1>Digite sua quarta nota: <input type="number" id="numero4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" /></h1>
+        <button onclick="calcular()">Calcular</button>
+    <h1 id="media">Média: </h1>
+        </div>
+        
+</div>
+    <div class="menu2">
+        
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
